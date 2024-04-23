@@ -1,0 +1,72 @@
+.grid-container{
+    display:grid;
+    grid-template-areas:
+    "ejemplo1 ejemplo1 ejemplo1"
+    "aside main main"
+    "footer footer footer";
+    grid-template-columns: 12% auto;
+    grid-template-rows: 10% auto 10%;
+    height: 100vh;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: ejemplo1;
+    background-color: rgb(37, 82, 132);
+    
+}
+header h3{
+    color: white;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(207, 207, 207);
+    grid-area: aside;
+}
+aside div{
+    margin:0 20% 0 15%
+}
+aside p{
+    font-size: large;
+    margin: 3px;
+}
+aside span{
+    color:grey
+}
+main{
+    background-color: rgb(207, 207, 207);
+    grid-area: main;
+}
+footer{
+    display: flex;
+    grid-area: footer;
+    justify-content: center;
+    align-items: center;
+
+}
+.grid-galeria{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 10px;
+    justify-content: space-around;
+}
+.card{
+    width: 350px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card img{
+    width: 100%;
+}
+.card button{
+    width: 100%; 
+    padding: 10px;
+    color: white;
+    background-color: rgb(37, 82, 132);
+}
